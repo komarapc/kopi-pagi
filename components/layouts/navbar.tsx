@@ -53,7 +53,7 @@ export default function Navbar() {
           </div>
           {/* toggle button */}
           <div
-            className="md:hidden text-white text-x px-5 py-5 hover:rounded-lg hover:bg-orange-500"
+            className="md:hidden text-white text-x px-5 py-5 hover:rounded-lg hover:bg-orange-500 cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
           >
             <FaBars />
@@ -81,7 +81,10 @@ export default function Navbar() {
             >
               About
             </button>
-            <button className="px-6 py-4 hover:bg-orange-500 hover:rounded-md">
+            <button
+              className="px-6 py-4 hover:bg-orange-500 hover:rounded-md"
+              onClick={() => gotoElement("section-contact")}
+            >
               Contact
             </button>
           </div>
