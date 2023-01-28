@@ -27,25 +27,25 @@ export default function Navbar() {
           {/* menu for desktop */}
           <div className="hidden md:flex gap- text-white">
             <button
-              className="px-6 py-4 hover:bg-black/10 hover:rounded-md"
+              className="px-6 py-4 hover:bg-orange-500 hover:rounded-md"
               onClick={() => gotoElement("section-home")}
             >
               HOME
             </button>
             <button
-              className="px-6 py-4 hover:bg-black/10 hover:rounded-md"
+              className="px-6 py-4 hover:bg-orange-500 hover:rounded-md"
               onClick={() => gotoElement("section-product")}
             >
               Product
             </button>
             <button
-              className="px-6 py-4 hover:bg-black/10 hover:rounded-md"
+              className="px-6 py-4 hover:bg-orange-500 hover:rounded-md"
               onClick={() => gotoElement("section-about")}
             >
               About
             </button>
             <button
-              className="px-6 py-4 hover:bg-black/10 hover:rounded-md"
+              className="px-6 py-4 hover:bg-orange-500 hover:rounded-md"
               onClick={() => gotoElement("section-contact")}
             >
               Contact
@@ -53,7 +53,7 @@ export default function Navbar() {
           </div>
           {/* toggle button */}
           <div
-            className="md:hidden text-white text-x px-5 py-5 hover:rounded-lg hover:bg-black/10"
+            className="md:hidden text-white text-x px-5 py-5 hover:rounded-lg hover:bg-orange-500"
             onClick={() => setIsOpen(!isOpen)}
           >
             <FaBars />
@@ -64,24 +64,24 @@ export default function Navbar() {
         {isOpen && (
           <div className="flex flex-col md:hidden mx-auto text-center font-semibold text-white">
             <button
-              className="px-6 py-4 hover:bg-black/10 hover:rounded-md"
+              className="px-6 py-4 hover:bg-orange-500 hover:rounded-md"
               onClick={() => gotoElement("section-home")}
             >
               HOME
             </button>
             <button
-              className="px-6 py-4 hover:bg-black/10 hover:rounded-md"
+              className="px-6 py-4 hover:bg-orange-500 hover:rounded-md"
               onClick={() => gotoElement("section-product")}
             >
               Product
             </button>
             <button
-              className="px-6 py-4 hover:bg-black/10 hover:rounded-md"
+              className="px-6 py-4 hover:bg-orange-500 hover:rounded-md"
               onClick={() => gotoElement("section-about")}
             >
               About
             </button>
-            <button className="px-6 py-4 hover:bg-black/10 hover:rounded-md">
+            <button className="px-6 py-4 hover:bg-orange-500 hover:rounded-md">
               Contact
             </button>
           </div>
